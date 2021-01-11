@@ -1,5 +1,5 @@
 """
-собственные классы для программы Pomodoro
+собственные классы для работы со временем
 """
 
 import time
@@ -8,7 +8,6 @@ import time
 """
 Класс для работы со временем для разных практических задач.
 """
-
 
 class MyTime:
     def __init__(self, hours, minutes, seconds):
@@ -146,7 +145,7 @@ class Timer(MyTime):
                      f'{Timer.__getForm(s)}'
             print(output)
 
-            if sec == 1:
+            if sec == 1:  # конец отсчета
                 break
         return 'ALARM!!!'
 
